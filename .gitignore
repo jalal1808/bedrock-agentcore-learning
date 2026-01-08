@@ -1,0 +1,88 @@
+# ================================
+# Python
+# ================================
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+*.egg
+*.egg-info/
+dist/
+build/
+.eggs/
+
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+
+# ================================
+# uv / pip
+# ================================
+uv.lock
+pip-wheel-metadata/
+
+# ================================
+# Environment variables & secrets
+# ================================
+.env
+.sample_env
+*.env
+*.secret
+*.key
+
+# ================================
+# AWS / Bedrock
+# ================================
+.aws/
+bedrock_*.log
+
+# ================================
+# IDEs & Editors
+# ================================
+.vscode/
+.idea/
+*.iml
+.DS_Store
+Thumbs.db
+
+# ================================
+# Docker
+# ================================
+docker-compose.override.yml
+*.log
+
+# ================================
+# Jupyter / Data
+# ================================
+.ipynb_checkpoints/
+*.csv
+*.tsv
+
+# (keep this only if you want to track CSVs)
+# !lauki_qna.csv
+
+# ================================
+# Runtime / Generated files
+# ================================
+learning_aws_agentcore.egg-info/
+SOURCES.txt
+PKG-INFO
+dependency_links.txt
+top_level.txt
+
+# ================================
+# Cache / Temp
+# ================================
+.cache/
+pytest_cache/
+.mypy_cache/
+ruff_cache/
+
+# ================================
+# OS
+# ================================
+*.swp
+*.swo

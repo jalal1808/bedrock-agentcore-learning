@@ -1,0 +1,118 @@
+default_agent: memory_agent
+agents:
+  rag_agent_runtime:
+    name: rag_agent_runtime
+    entrypoint: C:/Users/Jalal/Desktop/Jalal Works/agentcoree/rag_agent_runtime.py
+    deployment_type: container
+    runtime_type: null
+    platform: linux/arm64
+    container_runtime: none
+    source_path: C:\Users\Jalal\Desktop\Jalal Works\agentcoree
+    aws:
+      execution_role: arn:aws:iam::363934983720:role/AmazonBedrockAgentCoreSDKRuntime-ap-south-1-bc2ca0e356
+      execution_role_auto_create: false
+      account: '363934983720'
+      region: ap-south-1
+      ecr_repository: 363934983720.dkr.ecr.ap-south-1.amazonaws.com/bedrock-agentcore-rag_agent_runtime
+      ecr_auto_create: false
+      s3_path: null
+      s3_auto_create: false
+      network_configuration:
+        network_mode: PUBLIC
+        network_mode_config: null
+      protocol_configuration:
+        server_protocol: HTTP
+      observability:
+        enabled: true
+      lifecycle_configuration:
+        idle_runtime_session_timeout: null
+        max_lifetime: null
+    bedrock_agentcore:
+      agent_id: rag_agent_runtime-FLC1gkDyEA
+      agent_arn: arn:aws:bedrock-agentcore:ap-south-1:363934983720:runtime/rag_agent_runtime-FLC1gkDyEA
+      agent_session_id: 142cfdd3-cc15-4788-954a-1cfb19373572
+    codebuild:
+      project_name: bedrock-agentcore-rag_agent_runtime-builder
+      execution_role: arn:aws:iam::363934983720:role/AmazonBedrockAgentCoreSDKCodeBuild-ap-south-1-bc2ca0e356
+      source_bucket: bedrock-agentcore-codebuild-sources-363934983720-ap-south-1
+    memory:
+      mode: NO_MEMORY
+      memory_id: null
+      memory_arn: null
+      memory_name: null
+      event_expiry_days: 30
+      first_invoke_memory_check_done: false
+      was_created_by_toolkit: false
+    identity:
+      credential_providers: []
+      workload: null
+    aws_jwt:
+      enabled: false
+      audiences: []
+      signing_algorithm: ES384
+      issuer_url: null
+      duration_seconds: 300
+    authorizer_configuration: null
+    request_header_configuration: null
+    oauth_configuration: null
+    api_key_env_var_name: null
+    api_key_credential_provider_name: null
+    is_generated_by_agentcore_create: false
+  memory_agent:
+    name: memory_agent
+    entrypoint: C:/Users/Jalal/Desktop/Jalal Works/agentcoree/memory_agent.py
+    deployment_type: container
+    runtime_type: null
+    platform: linux/arm64
+    container_runtime: none
+    source_path: C:\Users\Jalal\Desktop\Jalal Works\agentcoree
+    aws:
+      execution_role: arn:aws:iam::363934983720:role/AmazonBedrockAgentCoreSDKRuntime-ap-south-1-9cba7eb75a
+      execution_role_auto_create: false
+      account: '363934983720'
+      region: ap-south-1
+      ecr_repository: 363934983720.dkr.ecr.ap-south-1.amazonaws.com/bedrock-agentcore-memory_agent
+      ecr_auto_create: false
+      s3_path: null
+      s3_auto_create: false
+      network_configuration:
+        network_mode: PUBLIC
+        network_mode_config: null
+      protocol_configuration:
+        server_protocol: HTTP
+      observability:
+        enabled: true
+      lifecycle_configuration:
+        idle_runtime_session_timeout: null
+        max_lifetime: null
+    bedrock_agentcore:
+      agent_id: memory_agent-gIzBa97ZlC
+      agent_arn: arn:aws:bedrock-agentcore:ap-south-1:363934983720:runtime/memory_agent-gIzBa97ZlC
+      agent_session_id: 36a0355d-6bf5-450a-8881-f54a07e909b9
+    codebuild:
+      project_name: bedrock-agentcore-memory_agent-builder
+      execution_role: arn:aws:iam::363934983720:role/AmazonBedrockAgentCoreSDKCodeBuild-ap-south-1-9cba7eb75a
+      source_bucket: bedrock-agentcore-codebuild-sources-363934983720-ap-south-1
+    memory:
+      mode: STM_AND_LTM
+      memory_id: agentcore_memory-juvLab229f
+      memory_arn: null
+      memory_name: memory_agent_memory
+      event_expiry_days: 30
+      first_invoke_memory_check_done: false
+      was_created_by_toolkit: false
+    identity:
+      credential_providers: []
+      workload: null
+    aws_jwt:
+      enabled: false
+      audiences: []
+      signing_algorithm: ES384
+      issuer_url: null
+      duration_seconds: 300
+    authorizer_configuration: null
+    request_header_configuration: null
+    oauth_configuration: null
+    api_key_env_var_name: null
+    api_key_credential_provider_name: null
+    is_generated_by_agentcore_create: false
