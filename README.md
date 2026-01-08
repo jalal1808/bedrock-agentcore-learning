@@ -4,7 +4,7 @@ Hands-on learning **Amazon Bedrock AgentCore**, a fully managed service for buil
 
 ## 📚 Structure
 
-This course includes three example implementations of increasing complexity:
+This includes three example implementations of increasing complexity:
 
 1. **`simple_rag.py`** - Basic LangGraph agent with FAQ search capabilities using LangChain
 2. **`rag_agent_runtime.py`** - AgentCore runtime integration with tool-based FAQ search and query reformulation
@@ -29,7 +29,6 @@ Install uv:
 ```bash
 pip install uv
 ```
-Or follow the [uv installation guide](https://docs.astral.sh/uv/getting-started/installation/)
 
 ### AWS Account & Credentials
 
