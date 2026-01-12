@@ -1,0 +1,17 @@
+[
+  {
+    "question": "Explain roaming activation",
+    "expected_keywords": ["roaming", "activation", "service"],
+    "type": "semantic"
+  },
+  {
+    "question": "What answer is linked to roaming?",
+    "expected_keywords": ["roaming"],
+    "type": "graph"
+  },
+  {
+    "question": "Which FAQs are related to activation?",
+    "expected_keywords": ["activation"],
+    "type": "graph"
+  }
+]
